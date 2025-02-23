@@ -49,7 +49,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               <img
                 src={formData.avatarUrl}
                 alt="Profile"
-                className="h-[8rem] w-[6rem] rounded-xl mx-auto mb-6 object-cover"
+                className="h-[9rem] w-[8rem] rounded-xl mx-auto mb-6 object-cover"
               />
             )}
 
