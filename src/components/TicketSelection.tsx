@@ -36,7 +36,7 @@ const TicketSelection = ({ formData, updateFormData, onNext }: TicketSelectionPr
         </p>
       </div>
 
-        <div className="w-full h-[4px] border-teal-accent/40 mb-4"></div>
+        <div className="w-full h-[2px] bg-teal-accent/40 mb-4"></div>
         
       <div className="mb-8">
         <label className="text-white mb-4 block">Select Ticket Type:</label>
