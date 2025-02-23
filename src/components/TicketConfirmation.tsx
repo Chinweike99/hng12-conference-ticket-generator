@@ -54,19 +54,19 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
             )}
 
             <div className="grid grid-cols-2 p-2 rounded-xl border-teal-500/40 text-left">
-              <div className="border-b border-r border-teal-500/40">
+              <div className="border-b border-r p-3 border-teal-500/40">
                 <label className="text-white/60 text-sm">Enter your name</label>
                 <p className="text-white">{formData.name}</p>
               </div>
-              <div className="border-l border-b border-teal-500/40">
+              <div className="border-l p-3 border-b border-teal-500/40">
                 <label className="text-white/60 text-sm">Enter your email</label>
                 <p className="text-white">{formData.email}</p>
               </div>
-              <div  className="border-b border-r border-teal-500/40">
+              <div  className="border-b p-3 border-r border-teal-500/40">
                 <label className="text-white/60 text-sm">Ticket Type</label>
                 <p className="text-white">{formData.ticketType.toUpperCase()}</p>
               </div>
-              <div className="border-b border-l border-teal-500/40">
+              <div className="border-b p-3 border-l border-teal-500/40">
                 <label className="text-white/60 text-sm">Ticket ID</label>
                 <p className="text-white">#1</p>
               </div>
