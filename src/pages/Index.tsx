@@ -39,7 +39,7 @@ const Index = () => {
         </button>
       </nav>
       
-      <div className="p-3 border border-teal-accent">
+      <div>
       <AnimatePresence mode="wait">
         <motion.div
           key={step}
