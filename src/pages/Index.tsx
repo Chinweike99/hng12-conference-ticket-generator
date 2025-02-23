@@ -26,7 +26,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-teal flex flex-col items-center py-8 px-4">
       {/* Navbar */}
-      <nav className="w-full max-w-5xl flex rounded-xl fixed top-10 justify-between items-center mb-12 p-2 border border-white border-teal-500/40">
+      <nav className="w-full max-w-5xl z-9 flex rounded-xl fixed top-10 justify-between items-center mb-12 p-2 border border-white border-teal-500/40">
         <div className="flex items-center gap-2">
           <span className="text-white font-bold text-xl">Tiez</span>
         </div>
