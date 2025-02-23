@@ -41,9 +41,8 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               Techember Fest '25
             </h2>
             <div className="flex items-center gap-2 justify-center text-white/60 text-sm mb-8">
-              <span>📍 [Event Location]</span>
-              <span>||</span>
-              <span>March 15, 2025 | 7:00 PM</span>
+              <p>📍 04 Rumens road, Ikoyi, Lagos</p>
+              <p>📅March 15, 2025 | 7:00 PM</p>
             </div>
 
             {formData.avatarUrl && (
@@ -54,20 +53,20 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               />
             )}
 
-            <div className="grid grid-cols-2 gap-4 text-left mb-6">
-              <div>
+            <div className="grid grid-cols-2 gap-4 p-2 rounded-xl border-teal-500/40 text-left mb-6">
+              <div className="border-b border-r border-teal-500/40">
                 <label className="text-white/60 text-sm">Enter your name</label>
                 <p className="text-white">{formData.name}</p>
               </div>
-              <div>
+              <div className="border-l border-b border-teal-500/40">
                 <label className="text-white/60 text-sm">Enter your email</label>
                 <p className="text-white">{formData.email}</p>
               </div>
-              <div>
+              <div  className="border-b border-r border-teal-500/40">
                 <label className="text-white/60 text-sm">Ticket Type</label>
                 <p className="text-white">{formData.ticketType.toUpperCase()}</p>
               </div>
-              <div>
+              <div className="border-b border-l border-teal-500/40">
                 <label className="text-white/60 text-sm">Ticket ID</label>
                 <p className="text-white">#1</p>
               </div>
@@ -91,7 +90,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               <img
                 src={`https://bwipjs-api.metafloor.com/?bcid=code128&text=${barcode}`}
                 alt="Barcode"
-                className="mx-auto"
+                className="mx-auto h-[3rem]"
               />
               <div className="text-white/40 text-sm mt-2">{barcode}</div>
             </div>
