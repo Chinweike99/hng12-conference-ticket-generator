@@ -26,7 +26,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="text-center p-[3rem] border-2 border-teal-accent-/20 rounded-2xl"
+      className="text-center lg:p-[8rem] sm:p-[2rem] border-2 border-teal-500/20 rounded-2xl"
     >
       <h1 className="text-3xl text-white mb-4">Your Ticket is Booked!</h1>
       <p className="text-white/60 mb-12">
@@ -53,7 +53,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               />
             )}
 
-            <div className="grid grid-cols-2 p-2 rounded-xl border-teal-500/40 text-left mb-6">
+            <div className="grid grid-cols-2 p-2 rounded-xl border-teal-500/40 text-left">
               <div className="border-b border-r border-teal-500/40">
                 <label className="text-white/60 text-sm">Enter your name</label>
                 <p className="text-white">{formData.name}</p>
