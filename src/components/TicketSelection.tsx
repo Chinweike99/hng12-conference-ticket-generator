@@ -18,7 +18,7 @@ const TicketSelection = ({ formData, updateFormData, onNext }: TicketSelectionPr
   ];
 
   return (
-    <div className="bg-teal-light backdrop-blur-md rounded-3xl p-8  border-2 border-teal-accent/40">
+    <div className="bg-teal-light backdrop-blur-md rounded-3xl p-8  border-2 border-teal-accent/40 mt-22">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl text-white font-light">Ticket Selection</h1>
         <span className="text-white/60">Step 1/3</span>
