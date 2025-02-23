@@ -18,13 +18,13 @@ const TicketSelection = ({ formData, updateFormData, onNext }: TicketSelectionPr
   ];
 
   return (
-    <div className="bg-teal-light backdrop-blur-md rounded-3xl p-8 border border-teal-accent/20">
+    <div className="bg-teal-light backdrop-blur-md rounded-3xl p-8 border border-teal-accent/10">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl text-white font-light">Ticket Selection</h1>
         <span className="text-white/60">Step 1/3</span>
       </div>
 
-      <div className="flex flex-col border-2 border-teal-accent rounded-2xl p-4">
+      <div className="flex flex-col border-2 border-teal-accent/40 rounded-2xl p-4">
       <div className="bg-teal-light border  rounded-xl p-6 mb-8 text-center">
         <h2 className="text-3xl text-white font-bold mb-4">Techember Fest '25</h2>
         <p className="text-white/80 mb-2">
@@ -36,7 +36,7 @@ const TicketSelection = ({ formData, updateFormData, onNext }: TicketSelectionPr
         </p>
       </div>
 
-        <div className="w-full h-[2px] bg-teal-accent my-4"></div>
+        <div className="w-full h-[2px] border-teal-accent/40 mb-4"></div>
         
       <div className="mb-8">
         <label className="text-white mb-4 block">Select Ticket Type:</label>
