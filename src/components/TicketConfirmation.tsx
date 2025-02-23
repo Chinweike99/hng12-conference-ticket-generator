@@ -34,7 +34,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
         <button className="text-teal-accent">download</button>
       </p>
 
-      <div className="bg-teal-light backdrop-blur-md rounded-3xl p-8 border border-teal-accent/20 mb-8">
+      <div className="bg-teal-light backdrop-blur-md rounded-3xl p-8 border border-teal-500/40 mb-8">
         <div className="bg-teal rounded-xl p-6 relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="text-3xl text-white font-bold mb-4">
@@ -87,7 +87,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
         </div>
       </div>
 
-      <div className="mt-8 pt-8 border-t border-white/10">
+      <div className="mt-8 border rounded-xl p-6 border-white/10">
               <img
                 src={`https://bwipjs-api.metafloor.com/?bcid=code128&text=${barcode}`}
                 alt="Barcode"
