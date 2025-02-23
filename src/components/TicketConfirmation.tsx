@@ -34,7 +34,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
         <button className="text-teal-accent">download</button>
       </p>
 
-      <div className="bg-teal-light backdrop-blur-md rounded-3xl p-8 border border-teal-500/40 mb-8">
+      <div className="bg-teal-light backdrop-blur-md rounded-3xl p-8 border border-teal-500/40 ">
         <div className="bg-teal rounded-xl p-6 relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="text-3xl text-white font-bold mb-4">
@@ -49,24 +49,24 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               <img
                 src={formData.avatarUrl}
                 alt="Profile"
-                className="w-24 h-24 rounded-xl mx-auto mb-6 object-cover"
+                className="w-32 h-32 rounded-xl mx-auto mb-6 object-cover"
               />
             )}
 
-            <div className="grid grid-cols-2 p-2 rounded-xl border-teal-500/40 text-left">
-              <div className="border-b border-r p-3 border-teal-500/40">
+            <div className="grid grid-cols-2 p-3 border rounded-xl border-teal-500/40 text-left">
+              <div className="border-b border-r pl-3 border-teal-500/40">
                 <label className="text-white/60 text-sm">Enter your name</label>
                 <p className="text-white">{formData.name}</p>
               </div>
-              <div className="border-l p-3 border-b border-teal-500/40">
+              <div className="border-l pl-3 border-b border-teal-500/40">
                 <label className="text-white/60 text-sm">Enter your email</label>
                 <p className="text-white">{formData.email}</p>
               </div>
-              <div  className="border-b p-3 border-r border-teal-500/40">
+              <div  className="border-b pl-3 border-r border-teal-500/40">
                 <label className="text-white/60 text-sm">Ticket Type</label>
                 <p className="text-white">{formData.ticketType.toUpperCase()}</p>
               </div>
-              <div className="border-b p-3 border-l border-teal-500/40">
+              <div className="border-b pl-3 border-l border-teal-500/40">
                 <label className="text-white/60 text-sm">Ticket ID</label>
                 <p className="text-white">#1</p>
               </div>
