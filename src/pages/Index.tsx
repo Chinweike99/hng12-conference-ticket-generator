@@ -25,11 +25,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-teal flex flex-col items-center py-8 px-4">
-      <nav className="w-full max-w-5xl flex justify-between items-center mb-12">
+      <nav className="w-full max-w-5xl flex justify-between items-center mb-12 p-2 border border-white border-teal-accent">
         <div className="flex items-center gap-2">
           <span className="text-white font-bold text-xl">Tiez</span>
         </div>
-        <div className="flex gap-8">
+        <div className="flex gap-8 ">
           <a href="#" className="text-white hover:text-teal-accent transition-colors">Events</a>
           <a href="#" className="text-white hover:text-teal-accent transition-colors">My Tickets</a>
           <a href="#" className="text-white hover:text-teal-accent transition-colors">About Project</a>
@@ -38,7 +38,8 @@ const Index = () => {
           MY TICKETS →
         </button>
       </nav>
-
+      
+      <div className="p-3 border border-teal-accent">
       <AnimatePresence mode="wait">
         <motion.div
           key={step}
@@ -71,6 +72,7 @@ const Index = () => {
           )}
         </motion.div>
       </AnimatePresence>
+      </div>
     </div>
   );
 };
