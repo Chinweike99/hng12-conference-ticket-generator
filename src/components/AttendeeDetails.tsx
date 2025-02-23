@@ -71,7 +71,7 @@ const AttendeeDetails = ({
   };
 
   return (
-    <div className="bg-teal-light backdrop-blur-md rounded-3xl p-8 border border-teal-accent/20">
+    <div className="bg-teal-light backdrop-blur-md w-full rounded-3xl p-8 border border-teal-accent/20">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl text-white font-light">Attendee Details</h1>
         <span className="text-white/60">Step 2/3</span>
@@ -140,7 +140,7 @@ const AttendeeDetails = ({
             value={formData.specialRequest}
             onChange={(e) => updateFormData({ specialRequest: e.target.value })}
             className="w-full bg-teal border border-teal-accent/20 rounded-lg p-3 text-white min-h-[100px]"
-            placehoder="Textarea"
+            placeholder="Textarea"
           />
         </div>
       </div>
