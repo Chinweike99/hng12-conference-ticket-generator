@@ -29,7 +29,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
       className="text-center lg:p-[8rem] sm:p-[2rem] border-2 border-teal-500/20 rounded-2xl"
     >
       <h1 className="text-3xl text-white mb-4">Your Ticket is Booked!</h1>
-      <p className=" mb-12">
+      <p className=" text-white mb-12">
         Check your email for a copy or you can{" "}
         <button >download</button>
       </p>
@@ -86,23 +86,23 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
         </div>
       </div>
 
-      <div className="mb-8 border rounded-3xl p-6 border-white/10">
+      <div className="mb-8 border rounded-3xl p-6  border-teal-500/40">
               <img
                 src={`https://bwipjs-api.metafloor.com/?bcid=code128&text=${barcode}`}
                 alt="Barcode"
-                className="mx-auto h-[4rem]"
+                className="mx-auto"
               />
               <div className="text-white/40 text-sm mt-2">{barcode}</div>
             </div>
 
       <div className="flex justify-between gap-4">
         <button
-          className="w-full py-3 rounded-lg border border-teal-accent/20 text-white hover:bg-teal-accent/10 transition-colors"
+          className="w-full py-3 rounded-lg border border-teal-light text-white hover:bg-teal-accent/10 transition-colors"
           onClick={onBack}
         >
           Book Another Ticket
         </button>
-        <button className="w-full py-3 rounded-lg bg-teal-accent text-teal hover:bg-opacity-90 transition-colors">
+        <button className="w-full py-3 rounded-lg bg-teal-accent text-white hover:bg-opacity-90 transition-colors">
           Download Ticket
         </button>
       </div>
