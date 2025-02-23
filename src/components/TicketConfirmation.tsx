@@ -31,7 +31,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
       <h1 className="text-3xl text-white mb-4">Your Ticket is Booked!</h1>
       <p className="text-white/60 mb-12">
         Check your email for a copy or you can{" "}
-        <button className="text-teal-accent">download</button>
+        <button >download</button>
       </p>
 
       <div className="bg-teal-light backdrop-blur-md rounded-3xl p-8 border border-teal-500/40 ">
@@ -53,7 +53,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               />
             )}
 
-            <div className="grid grid-cols-2 p-3 border rounded-xl border-teal-500/40 text-left">
+            <div className="grid grid-cols-2 p-3 border-2 rounded-xl border-white text-left">
               <div className="border-b border-r pl-3 border-teal-500/40">
                 <label className="text-white/60 text-sm">Enter your name</label>
                 <p className="text-white">{formData.name}</p>
