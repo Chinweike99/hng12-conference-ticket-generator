@@ -71,7 +71,7 @@ const AttendeeDetails = ({
   };
 
   return (
-    <div className="bg-teal-light backdrop-blur-md lg:w-[500px] sm:min-w-[200px] rounded-3xl p-8 border border-teal-accent/20">
+    <div className="bg-teal-light backdrop-blur-md lg:w-[500px] sm:min-w-[200px] mt-[10rem] z-1 rounded-3xl p-8 border border-teal-accent/20">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl text-white font-light">Attendee Details</h1>
         <span className="text-white/60">Step 2/3</span>
