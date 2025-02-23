@@ -40,7 +40,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
             <h2 className="text-3xl text-white font-bold mb-4">
               Techember Fest '25
             </h2>
-            <div className="flex items-center gap-2 justify-center text-white/60 text-sm mb-8">
+            <div className="flex flex-col items-center gap-2 justify-center text-white/60 text-sm mb-8">
               <p>📍 04 Rumens road, Ikoyi, Lagos</p>
               <p>📅March 15, 2025 | 7:00 PM</p>
             </div>
@@ -53,7 +53,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               />
             )}
 
-            <div className="grid grid-cols-2 gap-4 p-2 rounded-xl border-teal-500/40 text-left mb-6">
+            <div className="grid grid-cols-2 p-2 rounded-xl border-teal-500/40 text-left mb-6">
               <div className="border-b border-r border-teal-500/40">
                 <label className="text-white/60 text-sm">Enter your name</label>
                 <p className="text-white">{formData.name}</p>
@@ -86,11 +86,11 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
         </div>
       </div>
 
-      <div className="mt-8 border rounded-xl p-6 border-white/10">
+      <div className="mb-8 border rounded-xl p-6 border-white/10">
               <img
                 src={`https://bwipjs-api.metafloor.com/?bcid=code128&text=${barcode}`}
                 alt="Barcode"
-                className="mx-auto h-[3rem]"
+                className="mx-auto h-[4rem]"
               />
               <div className="text-white/40 text-sm mt-2">{barcode}</div>
             </div>
