@@ -49,6 +49,7 @@ const Index = () => {
           transition={{ duration: 0.3 }}
           className="w-full max-w-2xl"
         >
+          
           {step === 1 && (
             <TicketSelection
               formData={formData}
