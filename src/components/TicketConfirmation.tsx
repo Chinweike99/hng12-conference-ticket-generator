@@ -53,7 +53,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               />
             )}
 
-            <div className="grid grid-cols-2 p-3 border-2 rounded-xl border-white text-left">
+            <div className="grid grid-cols-2 p-3 border-2 rounded-xl  border-teal-500/40 text-left">
               <div className="border-b border-r pl-3 border-teal-500/40">
                 <label className="text-white/60 text-sm">Enter your name</label>
                 <p className="text-white">{formData.name}</p>
@@ -90,7 +90,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               <img
                 src={`https://bwipjs-api.metafloor.com/?bcid=code128&text=${barcode}`}
                 alt="Barcode"
-                className="mx-auto"
+                className="mx-auto h-[6rem] w-[5rem]"
               />
               <div className="text-white/40 text-sm mt-2">{barcode}</div>
             </div>
