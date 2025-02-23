@@ -26,7 +26,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-teal flex flex-col items-center py-8 px-4">
       {/* Navbar */}
-      <nav className="w-full max-w-5xl flex justify-between items-center mb-12 p-2 border border-white border-teal-accent">
+      <nav className="w-full max-w-5xl flex rounded-xl fixed top-10 justify-between items-center mb-12 p-2 border border-white border-teal-500/40">
         <div className="flex items-center gap-2">
           <span className="text-white font-bold text-xl">Tiez</span>
         </div>
@@ -39,7 +39,7 @@ const Index = () => {
         </div>
 
         {/* Desktop Button */}
-        <button className="hidden md:block bg-white text-teal px-4 py-2 rounded-full hover:bg-opacity-90 transition-colors">
+        <button className="hidden md:block bg-white text-teal px-4 py-2 rounded hover:bg-opacity-90 transition-colors">
           MY TICKETS →
         </button>
 
