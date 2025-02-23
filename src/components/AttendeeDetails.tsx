@@ -147,13 +147,13 @@ const AttendeeDetails = ({
 
       <div className="flex justify-between gap-4 mt-8">
         <button
-          className="w-full py-3 rounded-lg border border-teal-accent/20 text-white hover:bg-teal-accent/10 transition-colors"
+          className="w-full py-3 rounded-lg border border-teal-accent/20 text-teal-500/40 hover:bg-teal-accent/10 transition-colors"
           onClick={onBack}
         >
           Back
         </button>
         <button
-          className="w-full py-3 rounded-lg bg-teal-accent text-teal hover:bg-opacity-90 transition-colors"
+          className="w-full py-3 rounded-lg bg-teal-accent text-white hover:bg-opacity-90 transition-colors"
           onClick={handleSubmit}
         >
           Get My Free Ticket
