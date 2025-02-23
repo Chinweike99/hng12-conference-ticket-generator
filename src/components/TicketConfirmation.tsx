@@ -26,7 +26,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="text-center"
+      className="text-center p-[3rem] border-2 border-teal-accent-/20 rounded-2xl"
     >
       <h1 className="text-3xl text-white mb-4">Your Ticket is Booked!</h1>
       <p className="text-white/60 mb-12">
@@ -82,7 +82,12 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               </div>
             )}
 
-            <div className="mt-8 pt-8 border-t border-white/10">
+            
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 pt-8 border-t border-white/10">
               <img
                 src={`https://bwipjs-api.metafloor.com/?bcid=code128&text=${barcode}`}
                 alt="Barcode"
@@ -90,9 +95,6 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               />
               <div className="text-white/40 text-sm mt-2">{barcode}</div>
             </div>
-          </div>
-        </div>
-      </div>
 
       <div className="flex justify-between gap-4">
         <button
