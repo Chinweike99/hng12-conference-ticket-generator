@@ -24,8 +24,8 @@ const TicketSelection = ({ formData, updateFormData, onNext }: TicketSelectionPr
         <span className="text-white/60">Step 1/3</span>
       </div>
 
-      <div className="flex flex-col border border-teal-light rounded-2xl p-3">
-      <div className="bg-teal-light border rounded-xl p-6 mb-8 text-center">
+      <div className="flex flex-col border-2 border-teal-accent rounded-2xl p-4">
+      <div className="bg-teal-light border  rounded-xl p-6 mb-8 text-center">
         <h2 className="text-3xl text-white font-bold mb-4">Techember Fest '25</h2>
         <p className="text-white/80 mb-2">
           Join us for an unforgettable experience at<br />
@@ -36,7 +36,7 @@ const TicketSelection = ({ formData, updateFormData, onNext }: TicketSelectionPr
         </p>
       </div>
 
-        <div className="w-full h-1 bg-teal-accent py-4"></div>
+        <div className="w-full h-[2px] bg-teal-accent my-4"></div>
         
       <div className="mb-8">
         <label className="text-white mb-4 block">Select Ticket Type:</label>
