@@ -48,7 +48,7 @@ const TicketSelection = ({ formData, updateFormData, onNext }: TicketSelectionPr
               whileTap={{ scale: 0.98 }}
               className={`p-4 rounded-xl border-2 transition-all ${
                 formData.ticketType === type.id
-                  ? "border-teal-accent bg-teal-accent/10"
+                  ? "border-teal-accent bg-teal-accent/10 bg:hover-teal-accent-40"
                   : "border-teal-accent/20 hover:border-teal-accent/40"
               }`}
               onClick={() => updateFormData({ ticketType: type.id })}
