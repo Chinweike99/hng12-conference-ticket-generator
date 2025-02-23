@@ -49,7 +49,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               <img
                 src={formData.avatarUrl}
                 alt="Profile"
-                className="w-[4rem] h-[4rem] rounded-xl mx-auto mb-6 object-cover"
+                className="h-[8rem] w-[6rem] rounded-xl mx-auto mb-6 object-cover"
               />
             )}
 
@@ -90,7 +90,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               <img
                 src={`https://bwipjs-api.metafloor.com/?bcid=code128&text=${barcode}`}
                 alt="Barcode"
-                className="mx-auto h-[8rem] w-[6rem]"
+                className="mx-auto h-[6rem]"
               />
               <div className="text-white/40 text-sm mt-2">{barcode}</div>
             </div>
