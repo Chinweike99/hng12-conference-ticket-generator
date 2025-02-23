@@ -29,7 +29,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
       className="text-center lg:p-[8rem] sm:p-[2rem] border-2 border-teal-500/20 rounded-2xl"
     >
       <h1 className="text-3xl text-white mb-4">Your Ticket is Booked!</h1>
-      <p className="text-white/60 mb-12">
+      <p className=" mb-12">
         Check your email for a copy or you can{" "}
         <button >download</button>
       </p>
@@ -49,7 +49,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
               <img
                 src={formData.avatarUrl}
                 alt="Profile"
-                className="w-32 h-32 rounded-xl mx-auto mb-6 object-cover"
+                className="w-[4rem] h-[4rem] rounded-xl mx-auto mb-6 object-cover"
               />
             )}
 
@@ -86,7 +86,7 @@ const TicketConfirmation = ({ formData, onBack }: TicketConfirmationProps) => {
         </div>
       </div>
 
-      <div className="mb-8 border rounded-xl p-6 border-white/10">
+      <div className="mb-8 border rounded-3xl p-6 border-white/10">
               <img
                 src={`https://bwipjs-api.metafloor.com/?bcid=code128&text=${barcode}`}
                 alt="Barcode"
