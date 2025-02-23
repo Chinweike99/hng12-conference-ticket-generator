@@ -71,7 +71,7 @@ const AttendeeDetails = ({
   };
 
   return (
-    <div className="bg-teal-light backdrop-blur-md w-full rounded-3xl p-8 border border-teal-accent/20">
+    <div className="bg-teal-light backdrop-blur-md lg:w-[500px] sm:min-w-[200px] rounded-3xl p-8 border border-teal-accent/20">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl text-white font-light">Attendee Details</h1>
         <span className="text-white/60">Step 2/3</span>
@@ -105,7 +105,7 @@ const AttendeeDetails = ({
 
         <div className="w-full h-[2px] bg-teal-500/40"></div>
         
-        <div>
+        <div className="w-full">
           <label className="text-white mb-2 block">Enter your name</label>
           <input
             type="text"
@@ -119,7 +119,7 @@ const AttendeeDetails = ({
           )}
         </div>
 
-        <div>
+        <div className="w-full">
           <label className="text-white mb-2 block">Enter your email *</label>
           <input
             type="email"
