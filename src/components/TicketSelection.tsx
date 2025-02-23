@@ -36,11 +36,11 @@ const TicketSelection = ({ formData, updateFormData, onNext }: TicketSelectionPr
         </p>
       </div>
 
-        <div className="w-full h-[2px] border-teal-accent/40 mb-4"></div>
+        <div className="w-full h-[2px] border-teal-accent/20 mb-4"></div>
         
       <div className="mb-8">
         <label className="text-white mb-4 block">Select Ticket Type:</label>
-        <div className="grid grid-cols-3 gap-4 border  border-teal-accent/40 rounded-2xl p-3">
+        <div className="grid grid-cols-3 gap-4 border  border-teal-accent/40 bg:hover-teal-accent-10 rounded-2xl p-3">
           {ticketTypes.map((type) => (
             <motion.button
               key={type.id}
@@ -49,7 +49,7 @@ const TicketSelection = ({ formData, updateFormData, onNext }: TicketSelectionPr
               className={`p-4 rounded-xl border-2 transition-all ${
                 formData.ticketType === type.id
                   ? "border-teal-accent bg-teal-accent/10"
-                  : "border-teal-accent/20 hover:border-teal-accent/40 hover:bg-teal-accent-10"
+                  : "border-teal-accent/20 hover:border-teal-accent/40"
               }`}
               onClick={() => updateFormData({ ticketType: type.id })}
             >
