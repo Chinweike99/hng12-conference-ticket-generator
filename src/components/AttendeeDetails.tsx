@@ -77,7 +77,8 @@ const AttendeeDetails = ({
         <span className="text-white/60">Step 2/3</span>
       </div>
 
-      <div className="space-y-6">
+      <div className="flex flex-col border-2 border-teal-accent/40 rounded-2xl p-4">
+      <div className="space-y-6 ">
         <div>
           <label className="text-white mb-4 block">Upload Profile Photo</label>
           <div
@@ -102,6 +103,8 @@ const AttendeeDetails = ({
           </div>
         </div>
 
+        <div className="w-full h-[2px] bg-teal-500/40"></div>
+        
         <div>
           <label className="text-white mb-2 block">Enter your name</label>
           <input
@@ -124,6 +127,7 @@ const AttendeeDetails = ({
             onChange={(e) => updateFormData({ email: e.target.value })}
             className={`w-full bg-teal border rounded-lg p-3 text-white transition-colors
               ${errors.email ? "border-red-500" : "border-teal-accent/20"}`}
+            placeholder="✉️hello@chinweike.ikem"
           />
           {errors.email && (
             <span className="text-red-500 text-sm mt-1">{errors.email}</span>
@@ -136,6 +140,7 @@ const AttendeeDetails = ({
             value={formData.specialRequest}
             onChange={(e) => updateFormData({ specialRequest: e.target.value })}
             className="w-full bg-teal border border-teal-accent/20 rounded-lg p-3 text-white min-h-[100px]"
+            placehoder="Textarea"
           />
         </div>
       </div>
@@ -154,6 +159,7 @@ const AttendeeDetails = ({
           Get My Free Ticket
         </button>
       </div>
+        </div>
     </div>
   );
 };
